@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>for 문 연습문제</title>
+		<script type="text/javascript">    
+		// 사용자에게 리스트 항목 수를 입력 받고, 입력된 항목 수 만큼 항목 내용을 입력받아 목록을 출력
+		var input = prompt("리스트 항목 수 입력 ");
+
+		document.write("<ul type=\"square\">");
+		for(var i=1; i<=input;i++){ //리스트의 항목item li 생성
+		var listItem = prompt("리스트 항목 입력") ;
+		document.write("<li>" + listItem + "</li>");
+		}
+		document.write("</ul>");
+        </script>    
+	</head>
+	<body>
+	
+	</body>
+</html>

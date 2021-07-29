@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>charAt()</title>
+        <script type="text/javascript">
+            var input = prompt("숫자 입력")
+
+            // 모든 문자를 하나씩 검색해서 숫자가 아니면 경고창 출력하고 for 문 중단
+            for (var i=0; i<input.length; i++){
+                if(!('0'<=input.charAt(i) && input.charAt(i) <='9')){
+                alert("숫자 형식이 아닙니다");
+                break; //for 문 중단
+                }
+            }
+            document.write(input);
+        </script>           
+    </head>
+    
+    <body>
+    </body>
+</html>

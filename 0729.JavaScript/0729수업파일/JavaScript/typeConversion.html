@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>형변환</title>
+		<script type="text/javascript">	
+			//문자열 입력
+			/*var num1 = prompt("숫자1 입력");
+			var num2 = prompt("숫자2 입력");*/
+
+			//parseInt():정수변환, Number() : 숫자(실수도 가능)
+			var num1 = Number(prompt("숫자1 입력"));
+			var num2 = Number(prompt("숫자2 입력"));
+			// parseInt된 결과와 Number된 결과(정수 + 실수) 이 연산은 불가능 할 수 있다
+			// 형변환 후 계산 코드
+
+			document.write(num1 + num2 +"<br>");
+			//+ 연산자는 문자열 결합연산로도 사용이 되기때문에 문자열로 입력된  num1과 num2를 결합해서 출력
+			document.write(num1 * num2);
+			//* 연산자는 문자열에 * 연산이 없으므로 문자열을 수치로 자동형변환 시킨 후 곱하기 연산을 진행 함
+		</script>
+	</head>
+	<body>	
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>setInterval() 예제</title>
+		<script type="text/javascript">
+			function showTime(){
+				/*  Date  객체 생성 */
+				var now = new Date();
+
+				/* 시 /분/초 가져오기 */
+				var hour =
+				var minute =
+				var second =
+				var amPm; //오전/오후 저장할 변수
+
+				 // 오전 오후 설정
+				if(hour < 12)
+
+				else{
+
+
+				}	
+				
+				var time = amPm + " " + hour + "시 " + minute + "분 " + second + "초 ";		
+				timeShow.innerHTML = time;
+			}			
+		</script>
+	</head>		
+	<body>
+	<!-- button 클릭시 시간 출력/정지 되게 함수 호출 -->
+       <button >시간 출력</button>
+       <button  >시간 정지</button>
+       <h1 id="timeShow">시간 출력</h1>  	  	   	
+	</body>
+</html>
+
+

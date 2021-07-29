@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>함수 예제</title>
+        <script type="text/javascript">		
+            //자동으로 실행되는 함수
+            (function(){
+                alert("함수 호출 없이도 자동 실행되는 함수");
+            })();
+
+            // 함수 선언 방법 1
+            function start() {
+            var answer = confirm("배경색을 변경 하시겠습니까?");
+            if(answer==true)
+                    changeColor() ;//changeColor 함수 호출
+            else
+                    alert("취소하였습니다.");
+            }
+
+            //함수 선언 방법 2
+            changeColor = function(){ //start() 함수에서 호출
+                document.write("배경색변경");
+                document.bgColor="red";
+                //document.body.style.background = "red";
+            }
+
+            start(); //start()  함수 호출
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

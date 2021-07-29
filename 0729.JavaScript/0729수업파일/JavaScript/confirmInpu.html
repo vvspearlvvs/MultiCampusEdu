@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>confirm() 함수로 입력 받기</title>
+        <script type="text/javascript">
+        //변수 선언하고 반환 받은 값(True/False) 저장
+        var isStudent= confirm("당신은 학생 입니까??");
+
+        if(isStudent==true) {
+		    result="학생입니다";
+		    discount = "50%";
+		} else {
+		    result="학생이 아닙니다";
+		    discount = "없음";
+		}
+
+		document.write("결과 : " + result + "<br>");
+		document.write("할인율 : " + discount);
+
+        </script>
+    </head>
+    
+    <body>
+    	<h1>body 본문에서 출력</h1>
+    </body>
+</html>
+
